@@ -14,6 +14,19 @@ Create a class that inherits from Handler and override the Routes() method. Call
         }
     }
 
+Call initialise from the Global.asax.cs:
+
+    public class Global : HttpApplication
+    {
+        protected void Application_Start(object sender, EventArgs e)
+        {
+            JeffApp.Initialise();
+        }
+    }
+
+And that's it. Run the app and hit '/hello'.
+Look in the Example folder for more of what Jeff can do.
+
 ## What's with the name?
 People tend to name these Sinatra clones after [Rat Pack](http://en.wikipedia.org/wiki/Rat_Pack) members, but I wanted to be different, so called it the first name that came into my head.
 
