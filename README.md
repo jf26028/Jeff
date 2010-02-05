@@ -9,15 +9,15 @@ Create a class that inherits from Handler and override the Routes() method. Call
 <code>
 public class App : Handler
 {
-    public override void Routes()
-    {
-        Get("hello", () => "Hello World");
-    }
+public override void Routes()
+{
+    Get("hello", () => "Hello World");
+}
 }
 </code>
 
 ## What's with the name?
-People tend to name these Sinatra clones after [Rat Pack](http://en.wikipedia.org/wiki/Rat_Pack) members, but I wanted to be different so called it the first name that came into my head.
+People tend to name these Sinatra clones after [Rat Pack](http://en.wikipedia.org/wiki/Rat_Pack) members, but I wanted to be different, so called it the first name that came into my head.
 
 ## License
 Copyright (c) 2010 Pete O'Grady

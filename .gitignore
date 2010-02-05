@@ -2,3 +2,4 @@ debug/
 bin/
 *.suo
 obj/
+*.swp
