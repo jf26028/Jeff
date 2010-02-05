@@ -6,15 +6,13 @@ It's probably a horrifically naive implementation, but it seems to work.
 ## A basic Jeff app
 Create a class that inherits from Handler and override the Routes() method. Call the Get(), Post(), Put(), and Delete() methods with a route and a function that returns a string:
 
-<code>
-public class App : Handler
-{
-public override void Routes()
-{
-    Get("hello", () => "Hello World");
-}
-}
-</code>
+    public class App : Handler
+    {
+        public override void Routes()
+        {
+            Get("hello", () => "Hello World");
+        }
+    }
 
 ## What's with the name?
 People tend to name these Sinatra clones after [Rat Pack](http://en.wikipedia.org/wiki/Rat_Pack) members, but I wanted to be different, so called it the first name that came into my head.
