@@ -7,8 +7,6 @@
 
     public static class JeffApp
     {
-		#region public static methods 
-
         public static void Initialise()
         {
             var classes = Assembly.GetCallingAssembly().GetTypes().Where(t => t.BaseType == typeof(Handler));
@@ -23,7 +21,5 @@
                 }
             }
         }
-
-		#endregion public static methods 
     }
 }

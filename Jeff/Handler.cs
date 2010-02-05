@@ -9,32 +9,16 @@
 
     public abstract class Handler
     {
-        #region constants 
-
         public const string Html = "text/html";
-
         public const string Json = "appliation/json";
-
         public const string Text = "text/plain";
-
-        #endregion constants 
-
-        #region private fields 
-
+        
         private Dictionary<string, Dictionary<string, Func<string>>> routesAndResponses;
-
-		#endregion private fields 
-
-		#region constructors 
-
+        
         public Handler()
         {
             this.routesAndResponses = new Dictionary<string, Dictionary<string, Func<string>>>();
         }
-
-		#endregion constructors 
-
-		#region properties 
 
         public string ContentType
         {
@@ -83,10 +67,6 @@
             }
         }
 
-		#endregion properties 
-
-		#region public methods 
-
         public void AddRouteAndResponse(string method, string route, Func<string> response)
         {
             Dictionary<string, Func<string>> routeAndResponses;
@@ -132,7 +112,5 @@
         }
         
         public abstract void Routes();
-
-		#endregion public methods 
     }
 }

@@ -5,8 +5,6 @@
 
     public class App : Handler
     {
-		#region public methods 
-
         public override void Routes()
         {
             Get("hello", () => "Hello!");
@@ -42,15 +40,9 @@
             Get("callmethod", CallMethod);
         }
 
-		#endregion public methods 
-
-		#region private methods 
-
         private string CallMethod()
         {
             return "<!DOCTYPE html><html><head><title>Something</title></head><body><h1>Something</h1><p>A page with some stuff on</p></body></html>";
         }
-
-		#endregion private methods 
     }
 }

@@ -6,15 +6,9 @@
 
     public class HttpHandler : IHttpHandler
     {
-		#region private fields 
-
         private Handler handler;
 
         private Dictionary<string, Func<string>> methodsAndResponses;
-
-		#endregion private fields 
-
-		#region constructors 
 
         public HttpHandler(Dictionary<string, Func<string>> methodsAndResponses, Handler handler)
         {
@@ -22,18 +16,10 @@
             this.handler = handler;
         }
 
-		#endregion constructors 
-
-		#region properties 
-
         public bool IsReusable
         {
             get { return true; }
         }
-
-		#endregion properties 
-
-		#region public methods 
 
         public void ProcessRequest(HttpContext context)
         {
@@ -49,7 +35,5 @@
                 context.Response.End();
             }
         }
-
-		#endregion public methods 
     }
 }
