@@ -1,5 +1,5 @@
 # Jeff - A .NET Sinatra clone
-After playing with System.Web.Routing I figured it would be pretty simple to build a [Sinatra](http://www.sinatrarb.com/) clone in .NET.
+After playing with [System.Web.Routing](http://msdn.microsoft.com/en-us/library/system.web.routing.aspx) I figured it would be pretty simple to build a [Sinatra](http://www.sinatrarb.com/) clone in .NET.
 
 It's probably a horrifically naive implementation, but it seems to work.
 
