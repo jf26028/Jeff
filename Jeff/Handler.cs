@@ -10,7 +10,7 @@
     public abstract class Handler
     {
         public const string Html = "text/html";
-        public const string Json = "appliation/json";
+        public const string Json = "application/json";
         public const string Text = "text/plain";
         
         private Dictionary<string, Dictionary<string, Func<string>>> routesAndResponses;
