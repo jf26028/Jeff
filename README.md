@@ -14,7 +14,7 @@ Create a class that inherits from Handler and override the Routes() method. Call
         }
     }
 
-Call initialise from the Global.asax.cs:
+Then call initialise from the Global.asax.cs:
 
     public class Global : HttpApplication
     {
