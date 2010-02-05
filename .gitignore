@@ -3,3 +3,5 @@ bin/
 *.suo
 obj/
 *.swp
+*.pidb
+*.userprefs
