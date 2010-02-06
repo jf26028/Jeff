@@ -1,8 +1,6 @@
 # Jeff - A .NET Sinatra clone
 After playing with [System.Web.Routing](http://msdn.microsoft.com/en-us/library/system.web.routing.aspx) I figured it would be pretty simple to build a [Sinatra](http://www.sinatrarb.com/) clone in .NET.
 
-It's probably a horrifically naive implementation, but it seems to work.
-
 ## A basic Jeff app
 Create a class that inherits from Handler and override the Routes() method. Call the Get(), Post(), Put(), and Delete() methods with a route and a function that returns a string:
 
