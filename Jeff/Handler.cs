@@ -67,6 +67,18 @@
             }
         }
 
+        public int Status
+        {
+            get
+            {
+                return this.HttpContext.Response.StatusCode;
+            }
+            set
+            {
+                this.HttpContext.Response.StatusCode = value;
+            }
+        }
+
         public void AddRouteAndResponse(string method, string route, Func<string> response)
         {
             Dictionary<string, Func<string>> routeAndResponses;
