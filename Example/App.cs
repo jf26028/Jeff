@@ -7,14 +7,14 @@
     {
         public override void Routes()
         {
-            Get("hello", () => "Hello!");
-            Post("hello", () => "Hello! POST, posted: " + Params["example"]);
-            Put("hello", () => "Hello! PUT");
-            Delete("hello", () => "Hello! DELETE");
+            Get("/hello", () => "Hello!");
+            Post("/hello", () => "Hello! POST, posted: " + Params["example"]);
+            Put("/hello", () => "Hello! PUT");
+            Delete("/hello", () => "Hello! DELETE");
 
-            Get("hello/{name}", () => string.Format("Hello {0}", Params["name"]));
+            Get("/hello/{name}", () => string.Format("Hello {0}", Params["name"]));
 
-            Get("resource.{format}", () =>
+            Get("/resource.{format}", () =>
             {
                 switch (Params["format"])
                 {
@@ -35,9 +35,9 @@
                 return "Don't know what to do with this"; 
             });
 
-            Get("agent", () => "Your using: " + HttpContext.Request.Headers["User-Agent"].ToString());
+            Get("/agent", () => "Your using: " + HttpContext.Request.Headers["User-Agent"].ToString());
 
-            Get("callmethod", CallMethod);
+            Get("/callmethod", CallMethod);
         }
 
         private string CallMethod()

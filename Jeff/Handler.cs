@@ -81,6 +81,11 @@
 
         public void AddRouteAndResponse(string method, string route, Func<string> response)
         {
+			if (route.StartsWith("/"))
+            {
+                route = route.Remove(0, 1);
+            }
+			
             Dictionary<string, Func<string>> routeAndResponses;
             if (routesAndResponses.ContainsKey(route))
             {

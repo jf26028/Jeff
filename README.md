@@ -8,7 +8,7 @@ Create a class that inherits from Handler and override the Routes() method. Call
     {
         public override void Routes()
         {
-            Get("hello", () => "Hello World");
+            Get("/hello", () => "Hello World");
         }
     }
 
