@@ -81,7 +81,7 @@
 
         public void AddRouteAndResponse(string method, string route, Func<string> response)
         {
-			if (route.StartsWith("/"))
+            if (route.StartsWith("/"))
             {
                 route = route.Remove(0, 1);
             }
